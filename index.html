@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Tracker</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    
+    <div id="navBar">
+        <a href="./index.html">Home</a>
+        <a href="./appliedJobs.html">Applied Jobs</a>
+        <a href="./bookMarks.html">Bookmarks</a>
+    </div>
+    <h1>Job Application Tracker</h1>
+    <div id="inputBox">
+        <form id="myForm">
+            <h2>Details</h2>
+            <p>Company Name</p>
+            <input type="text" placeholder="Enter Company Name" id="companyName">
+            <p>Name</p>
+            <input type="text" placeholder="Enter Your Name" id="name">
+            <p>Email</p>
+            <input type="email" placeholder="Enter Your Email" id="email">
+            <p>Role</p>
+            <select id="selectBox">
+                <option value="">Select Role</option>
+                <option value="Frontend">Frontend</option>
+                <option value="Backend">Backend</option>
+                <option value="FSD">FSD</option>
+            </select>
+            <p>Expected Salary</p>
+            <input type="number" placeholder="Expected Salary" id="salary">
+            <input type="submit" value="Add" id="submit">
+        </form>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

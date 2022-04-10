@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applied Jobs</title>
+    <link rel="stylesheet" href="./appliedjobs.css">
+</head>
+<body>
+    <div id="navBar">
+        <a href="./index.html">Home</a>
+        <a href="./appliedJobs.html">Applied Jobs</a>
+        <a href="./bookMarks.html">Bookmarks</a>
+    </div>
+    <div id="sort_filter">
+        
+            <select id="nameSort" onchange="sortName()">
+                <option value="">Sort By Name</option>
+                <option value="Ascending">Ascending</option>
+                <option value="Descending">Descending</option>
+            </select>
+       
+        
+            <select id="filterRole" onchange="filterJobs()">
+                <option value="">Filter by Role</option>
+                <option value="Frontend">Frontend</option>
+                <option value="Backend">Backend</option>
+                <option value="FSD">FSD</option>
+            </select>
+       
+        
+            <select id="salarySort" onchange="sortSalary()">
+                <option value="">Sort By Salary</option>
+                <option value="Ascending">Ascending</option>
+                <option value="Descending">Descending</option>
+            </select>
+       
+    </div>
+    <div id="tableBox">
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        Company Name
+                    </th>
+                    <th>
+                        Name
+                    </th>
+                    <th>
+                        Email
+                    </th>
+                    <th>
+                        Role
+                    </th>
+                    <th>
+                        Salary
+                    </th>
+                    <th>
+                        Add to Bookmark
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+              
+            </tbody>
+        </table>
+    </div>
+
+    <script src="./appliedJobs.js"></script>
+</body>
+</html>
